@@ -35,7 +35,7 @@ while(exit == 0):
             cursor.execute(f"""SELECT *
                             FROM Customer 
                             WHERE CustID = {custid};""")
-            for x in cursor: # x is represting the entire line, its saying for each row, it looping the number of tiems there are rows, which is 1 here
+            for x in cursor: # only loops once here
                 print(f"CustID: {x[0]}")
                 print(f"Fname: {x[1]}")
                 print(f"Lname: {x[2]}")
@@ -146,7 +146,7 @@ while(exit == 0):
         else:
             print("Enter y or n")
 
-    #For my own purpose
+
 print()
 print()
 print("Number of updates completed is:", len(ids))
