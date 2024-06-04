@@ -3,7 +3,7 @@ import pymssql
 #setting up connection
 conn = pymssql.connect(
     host='stairway.usu.edu',
-    user='s002_aeladunn',
+    user='s002_joshliddell',
     password='---------', #not actual
     database='s002_aeladunn')
 
